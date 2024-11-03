@@ -20,7 +20,8 @@ function updateGamepadInfo(gamepad) {
         buttonsList.innerHTML = '';
         gamepad.buttons.forEach((button, index) => {
             const li = document.createElement('li');
-            li.textContent = `Botón ${index}: ${button.pressed ? 'Presionado' : 'Liberado'} (Valor: ${button.value})`;
+            li.textContent = `Botón ${index}: ${button.pressed ? 'Presionado' : 'Liberado'} (Valor: ${button.value.toFixed(2)})`;
+            li.style.backgroundColor = button.pressed ? '#4caf50' : '#ddd';
             buttonsList.appendChild(li);
         });
 
@@ -29,6 +30,7 @@ function updateGamepadInfo(gamepad) {
         gamepad.axes.forEach((axis, index) => {
             const li = document.createElement('li');
             li.textContent = `Eje ${index}: ${axis.toFixed(2)}`;
+            li.style.backgroundColor = Math.abs(axis) > 0.1 ? '#4caf50' : '#ddd';
             axesList.appendChild(li);
         });
 
