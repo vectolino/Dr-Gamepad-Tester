@@ -1,0 +1,96 @@
+@@ -1,103 +1,12 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+    display: flex;
+    justify-content: flex-end; /* Mueve el contenido hacia la derecha */
+    align-items: center; /* Centra verticalmente */
+    min-height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la pantalla */
+    margin: 0; /* Elimina márgenes por defecto */
+}
+
+/* Gamepads Container */
+#gamepads {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+/* Flex container */
+div[style*="display:flex"] {
+  width: 100%;
+  padding: 1rem;
+  gap: 1rem;
+}
+/* Centered container */
+div[style*="align-items:center"] {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Heading */
+h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+/* Image styling */
+img {
+  max-width: 6rem;
+  margin: 1rem;
+  border-radius: 50%;
+}
+/* Link styling */
+a {
+  text-decoration: none;
+  color: #226e93;
+  font-weight: bold;
+}
+a:hover {
+  color: #184d62;
+}
+/* Info divs inside the controller */
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 4px;
+  color: #ffffff;
+}
+.info .label {
+  font-weight: bold;
+}
+/* Specific background colors */
+.info:nth-of-type(1) {
+  background-color: #556e93a9;
+}
+.info:nth-of-type(2) {
+  background-color: #6e2293;
+}
+.info:nth-of-type(3) {
+  background-color: #935722de;
+}
+.info:nth-of-type(4) {
+  background-color: #226e93;
+}
+/* SVG styling */
+svg {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+  fill: none;
+  stroke-width: 2px;
+}
+#XBox {
+  stroke: hsl(210, 50%, 85%);
+  stroke-opacity: 1;
+    max-width: 100%; /* Asegura que el SVG no exceda el ancho de su contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
